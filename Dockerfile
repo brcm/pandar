@@ -8,16 +8,14 @@ RUN apk update \
 RUN wget --no-check-certificate https://github.com/brcm/pandar/releases/download/1/pandar.zip -O /tmp/pandar.zip \
     && unzip -d /tmp /tmp/pandar.zip \
     && mv /tmp/shadowsocks /shadowsocks \
-    && wget http://hls.ctopus.com/sunny/linux_amd64.zip -O /tmp/sunny.zip \
-    && unzip -d /tmp /tmp/sunny.zip \
-    && mv /tmp/linux_amd64/sunny /sunny \
-    && chmod +x /sunny \
+    && chmod +x /shadowsocks/frpc \
     && rm -rf /tmp/*
 
-ADD pandar.json /pandar.json
-ADD pandar.sh /pandar.sh
+ADD c/core /pandar.json
+ADD c/port /pandar.port.ini
+ADD c/init /pandar.sh
 
-WORKDIR /pandar
+WORKDIR /
 EXPOSE 80
 
 CMD sh /pandar.sh

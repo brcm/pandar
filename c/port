@@ -1,0 +1,13 @@
+[common]
+server_addr = frp.lu8.win
+server_port = 7000
+privilege_token = frp888
+
+[http-3120]
+privilege_mode = true
+type = http
+local_ip = 127.0.0.1
+local_port = 80
+use_gzip = true
+pool_count = 20
+custom_domains = wap.hn.chinamobile.com
