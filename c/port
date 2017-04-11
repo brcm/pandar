@@ -1,7 +1,7 @@
 [common]
-server_addr = frp.gofrp.win
+server_addr = frp.lu8.win
 server_port = 7000
-privilege_token = 12345678
+privilege_token = frp888
 
 [web49]
 privilege_mode = true
