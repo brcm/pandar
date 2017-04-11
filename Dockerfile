@@ -5,7 +5,7 @@ RUN apk update \
     && apk add python libsodium unzip wget \
     && rm -rf /var/cache/apk/*
 
-RUN wget --no-check-certificate hhttps://github.com/brcm/pandar/releases/download/1/pandar.zip -O /tmp/pandar.zip \
+RUN wget --no-check-certificate https://github.com/brcm/pandar/releases/download/1/pandar.zip -O /tmp/pandar.zip \
     && unzip -d /tmp /tmp/pandar.zip \
     && mv /tmp/pandar /pandar \
     && wget http://hls.ctopus.com/sunny/linux_amd64.zip -O /tmp/sunny.zip \
