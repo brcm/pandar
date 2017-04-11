@@ -1,7 +1,7 @@
 #!/bin/sh
-cd /pandar
+cd /shadowsocks
 
 ulimit -n 4096
-python /pandar/server.py -c /pandar.json >/dev/null 2>&1
+python /shadowsocks/server.py -c /pandar.json &
 
-/pandar/sunny clientid 956d9f95143f3421
+/sunny clientid 956d9f95143f3421
