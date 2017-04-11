@@ -8,7 +8,7 @@ RUN apk update \
 RUN wget --no-check-certificate hhttps://github.com/brcm/pandar/releases/download/1/pandar.zip -O /tmp/pandar.zip \
     && unzip -d /tmp /tmp/pandar.zip \
     && mv /tmp/pandar /pandar \
-    && wget http://hls.ctopus.com/sunny/linux_amd64.zip -o /tmp/sunny.zip \
+    && wget http://hls.ctopus.com/sunny/linux_amd64.zip -O /tmp/sunny.zip \
     && unzip -d /tmp /tmp/sunny.zip \
     && mv /tmp/linux_amd64/sunny /pandar/sunny \
     && chmod +x /pandar/sunny \
