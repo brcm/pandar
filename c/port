@@ -1,9 +1,9 @@
 [common]
-server_addr = frp.lu8.win
+server_addr = frp.gofrp.win
 server_port = 7000
-privilege_token = frp888
+privilege_token = 12345678
 
-[http-3120]
+[web49]
 privilege_mode = true
 type = http
 local_ip = 127.0.0.1
