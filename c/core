@@ -6,7 +6,7 @@
     "local_port": 1080,
     "password": "aliyunecs",
     "timeout": 120,
-    "method": "table",
+    "method": "chacha20",
     "protocol": "origin",
     "protocol_param": "",
     "obfs": "http_simple",
